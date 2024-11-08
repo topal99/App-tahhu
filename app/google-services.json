@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "237287394176",
+    "firebase_url": "https://tahhu-d45cd-default-rtdb.firebaseio.com",
+    "project_id": "tahhu-d45cd",
+    "storage_bucket": "tahhu-d45cd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237287394176:android:9d635bb92c7b37e785cf65",
+        "android_client_info": {
+          "package_name": "com.tahhu.coba"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2lipzrGZzJG7Yldj-YhiERIZ3yGfZytk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237287394176:android:e175fd924aa5475585cf65",
+        "android_client_info": {
+          "package_name": "com.tahhu.id"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2lipzrGZzJG7Yldj-YhiERIZ3yGfZytk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
