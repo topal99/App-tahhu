@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#1C1C1C</color>       <!-- Hitam pekat -->
+    <color name="secondary">#3A3A3A</color>     <!-- Abu-abu gelap -->
+    <color name="accent">#D4AF37</color>        <!-- Aksen emas -->
+    <color name="text_primary">#FFFFFF</color>  <!-- Putih -->
+    <color name="text_secondary">#B0BEC5</color> <!-- Abu terang -->
+    <color name="button_background">#2E2E2E</color> <!-- Tombol abu-abu -->
+    <color name="card_background">#252525</color>  <!-- Warna CardView -->
+    <color name="my_birutua">#0054B3</color>
+</resources>

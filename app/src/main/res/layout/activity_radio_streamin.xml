@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#383838"
+    tools:context=".RadioStreamin">
+
+    <!-- Header untuk Streaming Radio -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/back_beranda"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/left"
+            app:tint="#FFFFFF" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/googlesans_bold"
+            android:gravity="center"
+            android:text="Streaming Radio"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/kebab"
+            app:tint="#FFFFFF"/>
+    </LinearLayout>
+
+    <!-- Area Pemutar Musik atau Radio -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:padding="20dp"
+        android:background="@drawable/player_background"
+        android:layout_centerInParent="true">
+
+        <!-- Cover Gambar Radio atau Musik -->
+        <ImageView
+            android:id="@+id/album_art"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/album_art_placeholder"
+            android:scaleType="centerCrop"
+            android:background="@drawable/album_art_border"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Nama Lagu atau Judul Radio -->
+        <TextView
+            android:id="@+id/song_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/album_art"
+            android:layout_centerHorizontal="true"
+            android:text="RADIO SWADESI"
+            android:textSize="24sp"
+            android:textColor="@color/text_primary"
+            android:fontFamily="@font/googlesans_medium"
+            android:layout_marginTop="8dp"
+            android:gravity="center"/>
+
+        <!-- Kontrol Pemutar (Play/Pause, Forward, Rewind) -->
+        <LinearLayout
+            android:id="@+id/player_controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/song_title"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+
+            <ImageView
+                android:id="@+id/play_pause"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/play_icon"
+                android:contentDescription="Play"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+        <!-- Indikator Durasi (SeekBar) -->
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/player_controls"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:thumbTint="@color/my_birutua"
+            android:progressTint="@color/my_birutua"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
