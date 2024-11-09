@@ -1,0 +1,8 @@
+<!-- dimens.xml -->
+<resources>
+    <dimen name="margin_main">0dp</dimen>
+    <dimen name="margin_standard">17dp</dimen>
+    <dimen name="card_width">180dp</dimen>
+    <dimen name="card_height">210dp</dimen>
+    <dimen name="image_height">120dp</dimen>
+</resources>

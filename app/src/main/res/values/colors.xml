@@ -9,5 +9,18 @@
     <color name="text_secondary">#B0BEC5</color> <!-- Abu terang -->
     <color name="button_background">#2E2E2E</color> <!-- Tombol abu-abu -->
     <color name="card_background">#252525</color>  <!-- Warna CardView -->
-    <color name="my_birutua">#0054B3</color>
+    <color name="my_birutua">#0054B3</color><!-- Adjust this code as needed -->
+    <color name="orenge">#FF5722</color> <!-- Adjust this code as needed -->
+    <color name="starColor">#FFD700</color> <!-- Gold color for star icons -->
+    <color name="primaryColor">#FF5722</color> <!-- Example primary color -->
+
+    <color name="gray">#9E9E9E</color>
+    <color name="lightGray">#F5F5F5</color> <!-- Background of map container -->
+
+    <!-- Map Placeholder Color -->
+    <color name="mapPlaceholderColor">#BDBDBD</color> <!-- Gray tone to indicate map placeholder -->
+
+    <!-- Other Colors -->
+    <color name="iconTint">#3F51B5</color>
+
 </resources>
