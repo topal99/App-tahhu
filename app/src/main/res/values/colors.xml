@@ -7,20 +7,20 @@
     <color name="accent">#D4AF37</color>        <!-- Aksen emas -->
     <color name="text_primary">#FFFFFF</color>  <!-- Putih -->
     <color name="text_secondary">#B0BEC5</color> <!-- Abu terang -->
-    <color name="button_background">#2E2E2E</color> <!-- Tombol abu-abu -->
     <color name="card_background">#252525</color>  <!-- Warna CardView -->
-    <color name="my_birutua">#0054B3</color><!-- Adjust this code as needed -->
-    <color name="orenge">#FF5722</color> <!-- Adjust this code as needed -->
+    <color name="my_birutua">#1E47F0</color><!-- Adjust this code as needed -->
+    <color name="orenge">#471D00</color> <!-- Adjust this code as needed -->
     <color name="starColor">#FFD700</color> <!-- Gold color for star icons -->
-    <color name="primaryColor">#FF5722</color> <!-- Example primary color -->
-
+    <color name="primaryColor">#EBFBE2</color> <!-- Example primary color -->
     <color name="gray">#9E9E9E</color>
     <color name="lightGray">#F5F5F5</color> <!-- Background of map container -->
-
-    <!-- Map Placeholder Color -->
     <color name="mapPlaceholderColor">#BDBDBD</color> <!-- Gray tone to indicate map placeholder -->
-
-    <!-- Other Colors -->
-    <color name="iconTint">#3F51B5</color>
+    <color name="iconTint">#3F51B5</color> <!-- Other Colors -->
+    <color name="orange_light">#FFF4E1</color>  <!-- Light orange for background -->
+    <color name="orange_dark">#EBFBE2</color>   <!-- Darker orange for icons -->
+    <color name="primaryDarkColor">#F57C00</color> <!-- Darker orange for primary color variations -->
+    <color name="accentColor">#CC1500</color>      <!-- Accent color (deeper orange) -->
+    <color name="button_background">#FFCC80</color>
+    <color name="bg_home">#471D00</color>
 
 </resources>

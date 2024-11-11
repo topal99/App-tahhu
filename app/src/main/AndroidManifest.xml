@@ -7,9 +7,6 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
-    <!-- Add this inside the <application> tag -->
-
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -22,9 +19,24 @@
         android:theme="@style/Theme.Appsewamobil"
         android:usesCleartextTraffic="false"
         tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".booking_ride"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBLDcW-OLHkjLjJjBvT_YYdtKiYAQ9uXG4" />
+
+        <service
+            android:name=".BackgroundSoundService"
+            android:enabled="true"
+            android:exported="false" />
 
         <activity
             android:name=".rideSharing"
@@ -40,7 +52,7 @@
             android:exported="false" />
 
         <service
-            android:name=".RadioStreamingService"
+            android:name=".BackgroundSoundService"
             android:enabled="true"
             android:exported="false" />
 
@@ -48,7 +60,7 @@
             android:name=".RadioStreamin"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

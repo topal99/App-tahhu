@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".rideSharing">
+    android:background="@color/white">
 
     <!-- Map View -->
     <FrameLayout
@@ -79,40 +78,21 @@
 
         <!-- Pickup Location -->
         <ImageView
-            android:id="@+id/imageView2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/location"
             android:layout_gravity="center"
-            android:layout_width="wrap_content"
+            app:tint="@color/primaryColor" />
+
+        <EditText
+            android:id="@+id/pickupLocation"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/location" />
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
             android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:hint="Enter pickup location"
             android:padding="10dp"
-            android:layout_height="wrap_content">
-    <EditText
-        android:id="@+id/pickupLocation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter pickup location"
-        android:drawableStart="@drawable/location"
-        android:drawablePadding="8dp"
-        android:padding="10dp"
-        android:background="@drawable/rounded_edittext"
-        android:layout_marginBottom="8dp"/>
-
-    <EditText
-        android:id="@+id/destination"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter destination"
-        android:drawableStart="@drawable/placeholder"
-        android:drawablePadding="8dp"
-        android:padding="10dp"
-        android:background="@drawable/rounded_edittext"/>
-</LinearLayout>
-
+            android:background="@drawable/rounded_edittext" />
     </LinearLayout>
 
     <!-- Bottom Layout for Vehicle Selection and Ride Request -->
@@ -143,22 +123,56 @@
             android:orientation="horizontal"
             android:gravity="center">
 
-            <ImageView
-                android:id="@+id/carOption"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/taxi"
-                android:contentDescription="Car"
-                android:background="?attr/selectableItemBackground"
-                android:layout_marginEnd="16dp" />
+            <!-- Car Option with Price -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="16dp">
 
-            <ImageView
-                android:id="@+id/motorbikeOption"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/scooter"
-                android:contentDescription="Motorbike"
-                android:background="?attr/selectableItemBackground" />
+                <ImageView
+                    android:id="@+id/carOption"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/taxi"
+                    android:contentDescription="Car"
+                    android:background="?attr/selectableItemBackground" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Car - $10"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!-- Motorbike Option with Price -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/motorbikeOption"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/scooter"
+                    android:contentDescription="Motorbike"
+                    android:background="?attr/selectableItemBackground" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Motorbike - $5"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"/>
+            </LinearLayout>
         </LinearLayout>
 
         <!-- Selected Vehicle Info -->

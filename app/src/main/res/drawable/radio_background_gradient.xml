@@ -1,11 +1,12 @@
+<!-- res/drawable/radio_background_gradient.xml -->
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape android:shape="rectangle">
             <!-- Start color and end color of gradient -->
             <gradient
-                android:startColor="#1E47f0"
-                android:endColor="#00cfff"
-                android:angle="68" />
+                android:startColor="#FFD700"
+            android:endColor="#FFA500"
+            android:angle="70" />
         </shape>
     </item>
 </layer-list>

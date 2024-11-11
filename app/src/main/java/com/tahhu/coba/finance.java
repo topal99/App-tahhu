@@ -18,9 +18,9 @@ public class finance extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_finance);
-        ImageView btnback = findViewById(R.id.beranda);
+        ImageView btn_back = findViewById(R.id.beranda);
 
-        btnback.setOnClickListener(new View.OnClickListener() {
+        btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Handle click event, for example, open another activity
