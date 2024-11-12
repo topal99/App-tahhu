@@ -25,9 +25,6 @@
         <activity
             android:name=".booking_ride"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -41,15 +38,21 @@
         <activity
             android:name=".rideSharing"
             android:exported="false" />
+
         <activity
             android:name=".Survey"
             android:exported="false" />
+
         <activity
             android:name=".finance"
             android:exported="false" />
+
         <activity
             android:name=".Marketpalce"
             android:exported="false" />
+
+        <activity android:name=".UcoActivity"
+            android:exported="false"/>
 
         <service
             android:name=".BackgroundSoundService"
@@ -59,12 +62,13 @@
         <activity
             android:name=".RadioStreamin"
             android:exported="false" />
+
         <activity
             android:name=".SplashActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

@@ -17,7 +17,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     public Button btninternet;
-    public ImageView btn_radio,btn_market, btn_finence, btn_ride, btn_survey, menu_market, menu_finance, menu_ride;
+    public ImageView btn_radio,btn_market, btn_finence, btn_ride, btn_survey, menu_market, menu_finance, menu_ride, btn_uco;
     @SuppressLint({"WrongViewCast", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         menu_finance = findViewById(R.id.menufavorite);
         menu_ride = findViewById(R.id.menuride);
         btn_radio = findViewById(R.id.streaming);
+        btn_uco = findViewById(R.id.ucoIcon);
 
         RecyclerView productRecyclerView = findViewById(R.id.productRecyclerView);
         productRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
@@ -96,6 +97,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Handle click event, for example, open another activity
                 Intent intent = new Intent(MainActivity.this, Survey.class);
+                startActivity(intent);
+            }
+        });
+        btn_uco.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Handle click event, for example, open another activity
+                Intent intent = new Intent(MainActivity.this, UcoActivity.class);
                 startActivity(intent);
             }
         });
